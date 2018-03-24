@@ -4,8 +4,7 @@ owner = Aries
 contact = name@yourdomain.com
 mailhost = localhost
 #cgiurl = http://localhost/smokeping.cgi
-cgiurl = http://35.187.231.133/cgi-bin/smokeping.cgi
-
+cgiurl = http://YOUR_IP_ADDRESS/cgi-bin/smokeping.cgi
 
 # NOTE: do not put the Image Cache below cgi-bin
 # since all files under cgi-bin will be executed ... this is not
@@ -17,4 +16,3 @@ syslogfacility = local0
 # concurrentprobes = no
 
 @include /etc/smokeping/config.d/pathnames
-
