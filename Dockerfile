@@ -9,4 +9,5 @@ RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/run/smokeping /var/log/supe
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY General /etc/smokeping/config.d/General
 COPY Targets /etc/smokeping/config.d/Targets
+RUN sed -i -e "s/YOUR_IP_ADDRESS/$(curl ifconfig.co)/g" /etc/smokeping/config.d/General
 CMD ["/usr/bin/supervisord"]
