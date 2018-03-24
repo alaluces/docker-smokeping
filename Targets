@@ -1,0 +1,16 @@
+*** Targets ***
+
+probe = FPing
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of xxx Company.
+
++ Main
+menu = Targets
+
+
+++ APN
+menu = APN
+title = APN
+#probe = FPing
+host = 208.74.75.250

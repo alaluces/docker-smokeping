@@ -1,0 +1,20 @@
+*** General ***
+
+owner = Aries
+contact = name@yourdomain.com
+mailhost = localhost
+#cgiurl = http://localhost/smokeping.cgi
+cgiurl = http://35.187.231.133/cgi-bin/smokeping.cgi
+
+
+# NOTE: do not put the Image Cache below cgi-bin
+# since all files under cgi-bin will be executed ... this is not
+# good for images.
+# specify this to get syslog logging
+syslogfacility = local0
+# each probe is now run in its own process
+# disable this to revert to the old behaviour
+# concurrentprobes = no
+
+@include /etc/smokeping/config.d/pathnames
+
