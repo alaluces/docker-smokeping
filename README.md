@@ -16,6 +16,7 @@ sudo apt-get install -y docker-ce
 ```sh
 git clone https://github.com/alaluces/docker-smokeping.git
 cd docker-smokeping
+docker build -t docker-smokeping .
 docker run -d --name docker-smokeping -p 80:80 docker-smokeping
 ```
 #### point your browser to http://YOUR_IP_ADDRESS/smokeping/smokeping.cgi
